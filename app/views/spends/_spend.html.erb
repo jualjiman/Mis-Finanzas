@@ -1,0 +1,9 @@
+<p>
+	<strong><%= spend.subject %></strong> 
+	<%= spend.amount %> |
+	<%= link_to 'Editar', edit_category_spend_path(spend.category, spend) %> |
+	<%= link_to 'Remover', [ spend.category, spend ],
+	               method: :delete,
+	               data: { confirm: 'Are you sure?' } %>
+</p>
+<hr>

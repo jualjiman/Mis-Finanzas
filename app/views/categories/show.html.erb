@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gastos de <%= @category.name %></h1>
+
+<%= render @category.spends %>
+
+<%= link_to 'Nuevo gasto', new_category_spend_path(@category) %>
+<%= link_to 'Regresar', categories_path %>
