@@ -4,5 +4,7 @@
 
 <%= render @category.spends %>
 
+<h3><%= @total %></h3>
+
 <%= link_to 'Nuevo gasto', new_category_spend_path(@category) %>
 <%= link_to 'Regresar', categories_path %>

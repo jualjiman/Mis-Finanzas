@@ -10,6 +10,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @total = Spend.where(id: @category.id).count
   end
 
   # GET /categories/new
